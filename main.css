@@ -154,7 +154,7 @@ section {
 section:nth-child(even) {
   border-top: 4px solid #fff;
   background-color: #777;
-  color: #222;
+  /*color: #222;*/
   ;
 }
 
