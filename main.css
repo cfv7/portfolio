@@ -1,25 +1,20 @@
-
+/* =============================================================================
+	BODY
+============================================================================= */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 20px;
+  color: #fff;
+  background-color:#222;
+  text-align: center;
+  line-height: 1.5;
+}
 /* =============================================================================
   MEDIA QUERIES
 ============================================================================= */	
 /*mobile*/
 @media only screen and (min-width: 0px) and (max-width: 768px) {
-nav{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-left: 5%;
-  z-index: 10;
-  width: 100%;
-  background: #fff;
-  /*color: #fff;*/
-  font-weight: bold;
-  text-align: left;
-  font-size: 20px;
-  /*border-top: 4px solid #fff;*/
-}
-nav span {
+span {
   top: 7px;
   left: 5%;
   height: 54px;
@@ -42,31 +37,11 @@ section p{
   font-size: 15px;
 }
 }
+/* not mobile */
 @media only screen and (min-width: 768px){
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  width: 100%;
-  background: #222;
-  color: #fff;
-  font-weight: bold;
-  text-align: left;
-  font-size: 40px;
-  border-top: 4px solid #fff;
-}
 section p{
-    padding: 20px 1;
-    padding-left: 40px;
-    padding-right: 40px;
-    width:70%;
-    margin-top: 3%;
-    margin-left: auto; 
-    margin-right: auto;
-    color: #fff;
-    font-family: 'EB Garamond', serif;		
+  color: #fff;
+  font-family: 'EB Garamond', serif;		
 }
 h1{
   color: #fff;
@@ -74,17 +49,7 @@ h1{
   font-family: helvetica, sans-serif;
 }
 }
-/* =============================================================================
-	BODY
-============================================================================= */
-body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-size: 20px;
-  color: #fff;
-  background-color:#222;
-  text-align: center;
-  line-height: 1.5;
-}
+
 /* =============================================================================
 	BASICS
 ============================================================================= */
@@ -100,10 +65,14 @@ i {
   padding: 15px;
 }
 
+.contact i:hover {
+  color: #2850ad;
+}
+
 img {
   height: 100px;
   width: 100px;
-  border-radius: 70%;
+  /*border-radius: 70%;*/
   display:inline-block;
   vertical-align: middle;
 }
@@ -119,40 +88,6 @@ h4 {
 .copyright {
   font-size: 10px;
   color: grey;
-}
-
-/* =============================================================================
-  NAV
-============================================================================= */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  width: 100%;
-  background: #222;
-  color: #fff;
-  font-weight: bold;
-  text-align: left;
-  font-size: 40px;
-  padding-left: 25%;
-  border-top: 4px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-
-nav span {
-  position: fixed;
-  top: 7px;
-  left: 5%;
-  height: 54px;
-  width: 54px;
-  border-radius: 50%;
-  line-height: 55px;
-  font-size: 42px;
-  text-align: center;
-  background: #2850ad;
-  color: #fff;
 }
 
 /* =============================================================================
@@ -187,4 +122,27 @@ section h3{
 
 footer{
   color:#666;
+}
+
+/* =============================================================================
+  SECTION
+============================================================================= */
+
+.card {
+  background: #2850ad;
+  border-radius: 50%;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 300px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
