@@ -16,66 +16,92 @@
 <body>
   <main role="main">
     <!--<div class="corner-ribbon top-left sticky red shadow">讲中文?</div>-->
-    <section class="about-me">
+    <section class="header">
       <div>
         <h1>
           <u>Colin Van Sickle </u>
         </h1>
       </div>
-      <p class="about-me">
-        <!--Full Stack Web Dev <br> 📍 NY-->
-        <!--Email → cfvansick[-at-]gmail.com<br>-->
-      </p>
     </section>
-    <div class="line map"> 
+    <section>
+      <div class="about-me-wrapper">
+      <!--<img class="about-me-image" src="./examples/colin.png"-->
+      <h3 class="about-me-wrapper">about</h3>
+      <p class="about-me-wrapper">
+        I am a fullstack web developer currently living in Ithaca, NY. </br>
+        I love to learn new languages and understand different cultures. </br>
+        I have two years of tech experience working with a small web team. </br>
+        I have a liberal arts education in East Asian Studies and Chinese language. </br>
+      </p>
+      </div>
+
+      <!--<div class="projects-wrapper">
+        <h3 class="projects-wrapper">projects</h3>
+        <p class="projects-wrapper">
+          I. Symphesis - digital drum circle web app </br>
+          II. Wikipython - wikipedia scraping, word cloud generating python tool </br>
+          III. Hanzi - chinese character learning app </br>
+          IV. Jellylist - list-making app </br>
+        </p>
+      </div>-->
+    </section>    
+  
+    <!--<div class="line map"> 
       <ol>  
         <li class="stop"></li>
         <li class="stop about-me-stop"></li>
         <li class="stop projects-stop"></li>
         <li class="stop contact-stop"></li>
       </ol>
-    </div>
-    <div class="card-holder" >
-      <div id="wiki" class="card" style="display:none;">
-        <div class="project-title-image">
-          <h1 class="project-title">Wikipython</h1>
-          <img class="project-image" src="./examples/wikipython.png" alt="Wikipython">
+    </div>-->
+    <section>
+      <div class="project-wrapper">
+        <h3 class="project-header"> projects </h3>
+        
+        <div id="symphesis" class="card">
+          <div class="project-title-image">
+            <h1 class="project-title">Symphesis</h1>
+            <img class="project-image" src="./examples/symphesis.png" alt="Symphesis">
+          </div>
+          <div class="project-info">
+            <p> A collaborative music-making web application. </p>
+            <a href="https://github.com/orcasynth/symphesis"><i class="fa fa-github fa-2x"></i></a>
+          </div>
         </div>
-        <div class="project-info">
-          <p> 
-            A wikipedia scraping python tool that outputs a word cloud of most frequently used words.
-          </p>
-          <a href="https://github.com/cfv7/wikipython"><i class="fa fa-github fa-2x"></i></a>
+        
+        
+        <div id="wiki" class="card">
+          <div class="project-title-image">
+            <h1 class="project-title">Wikipython</h1>
+            <img class="project-image" src="./examples/wikipython.png" alt="Wikipython">
+          </div>
+          <div class="project-info">
+            <p> 
+              A python tool that scrapes wikipedia articles and outputs a word cloud.
+            </p>
+            <a href="https://github.com/cfv7/wikipython"><i class="fa fa-github fa-2x"></i></a>
+          </div>
+        </div>
+     
+   
+        <div id="hanzi" class="card" >
+          <div id="hanzi" class="project-title-image">
+            <h1 class="project-title">Hànzì</h1>
+            <img class="project-image" src="./examples/hanzi.png" alt="MandarinX">
+          </div>
+          <div class="project-info">
+            <p> 
+              A simple spaced-repetition flashcard game for learning Chinese characters.
+            </p>
+            <a href="https://github.com/cfv7/mandarinx"><i class="fa fa-github fa-2x"></i></a>
+          </div>
         </div>
       </div>
 
-      <div id="hanzi" class="card" >
-        <div id="mandarin" class="project-title-image">
-          <h1 class="project-title">Hanzi</h1>
-          <img class="project-image" src="./examples/mandarinx.png" alt="MandarinX">
-        </div>
-        <div class="project-info">
-          <p> 
-            A simple spaced-repetition flashcard game for learning Chinese characters.
-          </p>
-          <a href="https://github.com/cfv7/mandarinx"><i class="fa fa-github fa-2x"></i></a>
-        </div>
-      </div>
-
-      <div id="symphesis" class="card" style="display:none;">
-        <div class="project-title-image">
-          <h1 class="project-title">Symphesis</h1>
-          <img class="project-image" src="./examples/symphesis.png" alt="Symphesis">
-        </div>
-        <div class="project-info">
-          <p> A collaborative music-making web application. </p>
-          <a href="https://github.com/orcasynth/symphesis"><i class="fa fa-github fa-2x"></i></a>
-        </div>
-      </div>
     </div>
     <section class="contact-info">
       <div class="contact">
-        <a href="mailto:hq@colin.red" target="_blank">
+        <a href="mailto:cfvansick@gmail.com" target="_blank">
           <i class="fa fa-envelope-o fa-2x"></i></a>
         <a href="http://www.github.com/cfv7" target="_blank">
           <i class="fa fa-github fa-2x"></i></a>
@@ -86,7 +112,6 @@
           <a href="http://www.linkedin.com/in/colinvansickle" target="_blank">-->
           <i class="fa fa-file-text-o fa-2x"></i></a>
       </div>
-      <!--<p font-size="">email → cfvansick[-at-]gmail.com</p>-->
     </section>
   </main>
   <footer class="copyright"> © 2017</footer>

@@ -27,21 +27,28 @@ section p{
   width: 90%;
   margin-top: 10px;
 }
-.about-me-card{
-  padding: 30px;
+.about-me-wrapper{
+  background:ghostwhite;
+  /*padding: 30px;*/
   font-size: 17px;
 }
+.about-me{
+  color: #222;
+}
 .project-image{
-  visibility: hidden;
+  width: 100%;
+  margin-right: 100px;
+  /*visibility: hidden;*/
 }
 .project-title{
-  visibility: hidden;
-}
+ /*visibility: hidden;*/
+ }
 .project-info{
   visibility: hidden;
 }
 .project-info-mobile {
-  text-align: center;
+  color: black;
+  border: 5 px solid green;
 }
 }
 
@@ -57,6 +64,9 @@ h1{
 .about-me-card{
   padding-top: 50px;
   margin: 0 auto;
+}
+.project-info-mobile {
+  visibility: hidden;
 }
 }
 
@@ -134,6 +144,10 @@ section:nth-child(even) {
   ;
 }
 
+.header {
+  text-align: center;
+}
+
 /* ==========================
   CARD
 =========================== */	
@@ -155,18 +169,33 @@ section:nth-child(even) {
 }
 
 
-.about-me-card{
-  background: ghostwhite;
-  color: #222;
+.about-me-wrapper{
+  padding: 20px;
+  background: #222;
+  color: ghostwhite;
   z-index: 4;
   height: 100%;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
+
+/*.about-me-image{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  float: left;
+}*/
 
 /* ==========================
   PROJECT
 =========================== */	
+.project-header {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.project-wrapper{
+}
 
 .project-title-image {
   float: left;
@@ -183,9 +212,14 @@ section:nth-child(even) {
   width: 200px;
 }
 
-#mandarin {
+#hanzi .project-title-image{
   float: right;
 }
+
+#symphesis .project-title-image{
+  float: right;
+}
+
 
 .project-title {
   padding-top: 50px;
@@ -267,6 +301,10 @@ section:nth-child(even) {
   font-size: 10px;
   color: grey;
   border-bottom: 1px solid snow;
+}
+
+.email {
+  margin-bottom: 50px;
 }
 
 /* ==========================
