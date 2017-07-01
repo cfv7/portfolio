@@ -24,16 +24,13 @@ section p{
   font-size: 15px;
 }
 .card {
-  width: 90%;
+  width: 70%;
   margin-top: 10px;
 }
 .about-me-wrapper{
   background:ghostwhite;
   /*padding: 30px;*/
-  font-size: 17px;
-}
-.about-me{
-  color: #222;
+  font-size: 20px;
 }
 .project-image{
   width: 100%;
@@ -58,7 +55,7 @@ h1{
   font-size: 60px;
 }
 .card {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 .about-me-card{
@@ -89,8 +86,17 @@ u {
 i {
   text-align: center;
   position: center;
-  color: white;
+  color: #222;
   padding: 15px;
+}
+
+i:hover {
+  text-align: center;
+  position: center;
+  background: #99CCFF;
+  color: #222;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 p {
@@ -99,8 +105,8 @@ p {
 }
 
 img {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   /*border-radius: 70%;*/
   display:inline-block;
   vertical-align: middle;
@@ -110,75 +116,42 @@ img {
   box-sizing: border-box;
 }
 
+
 h4 {
   color: #2850ad;
 }
-/* subway circle */
-/*span {
-  top: 7px;
-  left: 5%;
-  height: 54px;
-  width: 54px;
-  border-radius: 50%;
-  line-height: 55px;
-  font-size: 42px;
-  text-align: center;
-  background: #2850ad;
-  color: #fff;
-}*/
 
 /* ==========================
   SECTION
 =========================== */	
 
 section {
-  /*border-top: 4px solid #fff;*/
   padding-top: 4% 0;
   background-color: #222;
 }
 
-section:nth-child(even) {
-  /*border-top: 4px solid #fff;*/
-  background-color: #222;
-  /*color: #222;*/
-  ;
-}
+/* ==========================
+  ABOUT
+=========================== */	
 
 .header {
   text-align: center;
 }
 
-/* ==========================
-  CARD
-=========================== */	
-
-.card {
-  /*background: #2850ad;*/
-  background: ghostwhite;
-  border-radius: 1%;
-  display: inline-block;
-  height: 350px;
-  margin: 1rem;
-  position: relative;
-  margin-top: 40px;
-  margin-bottom: 70px;
-}
-
-.card:nth-child(odd){
-  background: palegoldenrod;
-}
-
-
 .about-me-wrapper{
-  padding: 20px;
   background: #222;
   color: ghostwhite;
   z-index: 4;
   height: 100%;
   width: 100%;
   text-align: left;
+  margin-left: 40px;
 }
 
+.highlight{
+  color: palegoldenrod;
+  font-weight: bold;
+}
 /*.about-me-image{
   border-radius: 50%;
   height: 150px;
@@ -187,8 +160,9 @@ section:nth-child(even) {
 }*/
 
 /* ==========================
-  PROJECT
+  PROJECTS
 =========================== */	
+
 .project-header {
   text-align: left;
   margin-left: 40px;
@@ -199,17 +173,18 @@ section:nth-child(even) {
 
 .project-title-image {
   float: left;
-  width: 50%;
+  width: 100%;
   /*background-color: yellow;*/
   z-index: 3;
   height: 100%;
 }
 
 .project-title-image img{
-  padding: 20px;
+  margin: 10px;
   border-radius:  50%;
-  height:200px;
-  width: 200px;
+  height:100px;
+  width: 100px;
+  /*border: 3px solid #222;*/
 }
 
 #hanzi .project-title-image{
@@ -220,16 +195,25 @@ section:nth-child(even) {
   float: right;
 }
 
+#symph-info, #wiki-info, #hanzi-info{
+  color: #222;
+  font-size: large;
+  padding: 10px;
+}
+
+#symph-stack, #wiki-stack, #hanzi-stack{
+  color: #2850ad;
+}
 
 .project-title {
-  padding-top: 50px;
-  font-size: xx-large;
+  padding-top: 15px;
+  font-size: 1.5em;
   color: #222;
 }
 
 .project-info {
   float: right;
-  width: 50%;
+  width: 100%;
   /*background-color: lightgreen;*/
   z-index: 3;
   height: 100%;
@@ -237,8 +221,8 @@ section:nth-child(even) {
 }
 
 .project-info p{
-  padding-top: 100px;
-  color: #222;
+  visibility: hidden;
+  color: #99CCFF;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -282,15 +266,44 @@ section:nth-child(even) {
   -webkit-transform: rotate(-45deg);
 }
 
+
+/* ==========================
+  CARD
+=========================== */	
+
+.card {
+  /*background: #2850ad;*/
+  background: ghostwhite;
+  border-radius: 1%;
+  display: inline-block;
+  height: 400px;
+  margin: 1rem;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.card:nth-child(odd){
+  background: palegoldenrod;
+}
+
+
+
+
+
+
 /* ==========================
   FOOTER
 =========================== */	
 
-
-/*.contact-info {
+/*
+.contact-info {
   border-top: 1px solid #fff;
 }*/
 
+.contact i {
+  color:ghostwhite;
+}
 .contact i:hover {
   color: #ee352e;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
