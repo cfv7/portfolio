@@ -10,6 +10,10 @@ body {
   text-align: center;
   line-height: 1.5;
 }
+html {
+  display: block;
+  width: 100%;
+}
 
 /* ==========================
   MEDIA QUERIES
@@ -27,7 +31,7 @@ section p{
 }
 
 .card {
-  width: 90%;
+  width: 80%;
   margin-top: 10px;
 }
 
@@ -36,6 +40,11 @@ section p{
   /*padding: 30px;*/
   font-size: 20px;
 }
+
+.about-me-wrapper p{
+  width: 80%;
+}
+
 
 .project-image{
   width: 100%;
@@ -81,6 +90,7 @@ h1 {
 u {
   text-decoration: none;
   border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
 }
 
 i {
@@ -143,6 +153,10 @@ section {
   margin-left: 40px;
 }
 
+.about-me-wrapper h2 {
+  margin-left: 0;
+}
+
 .highlight{
   color: palegoldenrod;
   font-weight: bold;
@@ -160,11 +174,11 @@ section {
 .project-wrapper{
   height: 100%;
   width: 100%;
-  margin-left: 40px;
 }
 
 .project-wrapper h2{
   text-align: left;
+  margin-left: 40px;
 }
 
 
@@ -178,7 +192,7 @@ section {
 
 .project-title-image img{
   margin: 10px;
-  border-radius:  50%;
+  border-radius:  90%;
   height:100px;
   width: 100px;
   /*border: 3px solid #222;*/
@@ -304,18 +318,22 @@ section {
   z-index: 4;
   height: 100%;
   width: 100%;
-  margin-left: 40px;
-}
-.contact-info p, h2{
-  text-align: left;
 }
 
-.contact i, a{
-  text-align: center;
-  color:ghostwhite;
+.contact-info p, h2{
+  text-align: left;
+  margin-left: 40px;
+}
+
+.contact-info i, a {
+    margin-left: -1px;
+    padding-left: -2px;
+    color: ghostwhite;
 }
 
 .contact i:hover {
+  border-radius: 1%;
+  background: ghostwhite;
   color: #2850ad;
   box-shadow: 0 1px 3px 0 tint(#000000,44%), 0 1px 1px  0 tint(#000000,68%);
 }
@@ -324,8 +342,4 @@ section {
   font-size: 10px;
   color: grey;
   border-bottom: 1px solid snow;
-}
-
-.email {
-  margin-bottom: 50px;
 }
