@@ -94,6 +94,7 @@ a{
 h2{
   font-family: 'EB Garamond',serif;
   text-decoration: underline;
+  font-size: xx-large;
   /*text-decoration-style: thick;*/
 }
 
@@ -299,10 +300,10 @@ section {
   background: ghostwhite;
   border-radius: 1%;
   display: inline-block;
-  height: 410px;
+  height: 390px;
   margin: 1rem;
   position: relative;
-  margin-top: 40px;
+  margin-top: 25;
   margin-bottom: 40px;
 }
 
