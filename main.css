@@ -15,6 +15,11 @@ html {
   width: 100%;
 }
 
+#title{
+  margin-bottom: 0;
+  color: ghostwhite;
+}
+
 /* ==========================
   MEDIA QUERIES
 =========================== */	
@@ -27,7 +32,7 @@ h1{
 }
 
 section p{
-  font-size: 15px;
+  font-size: 21px;
 }
 
 .card {
@@ -35,16 +40,12 @@ section p{
   margin-top: 10px;
 }
 
-.about-me-wrapper{
-  background:ghostwhite;
-  /*padding: 30px;*/
+.about-me-wrapper p{
+  padding-left: 0;
+  padding-right:0; 
+  padding-bottom: 15px;
   font-size: 20px;
 }
-
-.about-me-wrapper p{
-  width: 80%;
-}
-
 
 .project-image{
   width: 100%;
@@ -55,6 +56,17 @@ section p{
 .project-info{
   visibility: hidden;
 }
+
+#symph-info, #wiki-info, #hanzi-info{
+  color: #222;
+  font-size: 15px;
+  padding: 7px;
+}
+
+.project-title h1{
+  margin-bottom:0;
+}
+
 }
 
 /* not mobile */
@@ -79,12 +91,16 @@ a{
   text-decoration: none;
 }
 
+h2{
+  font-family: 'EB Garamond',serif;
+  text-decoration: underline;
+  /*text-decoration-style: thick;*/
+}
 
-h1 {
-  color: #fff;
-  font-family: helvetica, sans-serif;
-  margin-top: 0;
-  margin-bottom: 0;
+h1, h2 {
+  color: #99CCFF;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 u {
@@ -149,8 +165,8 @@ section {
   z-index: 4;
   height: 100%;
   width: 100%;
-  text-align: left;
-  margin-left: 40px;
+  /*text-align: ce;*/
+  /*margin-left: 40px;*/
 }
 
 .about-me-wrapper h2 {
@@ -175,12 +191,6 @@ section {
   height: 100%;
   width: 100%;
 }
-
-.project-wrapper h2{
-  text-align: left;
-  margin-left: 40px;
-}
-
 
 .project-title-image {
   float: left;
@@ -208,7 +218,7 @@ section {
 
 #symph-info, #wiki-info, #hanzi-info{
   color: #222;
-  font-size: large;
+  font-size: medium;
   padding: 10px;
 }
 
@@ -219,7 +229,6 @@ section {
 }
 
 .project-title {
-  padding-top: 15px;
   font-size: 1.5em;
   color: #222;
 }
@@ -294,7 +303,7 @@ section {
   margin: 1rem;
   position: relative;
   margin-top: 40px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 .card:hover{
@@ -321,8 +330,8 @@ section {
 }
 
 .contact-info p, h2{
-  text-align: left;
-  margin-left: 40px;
+  /*text-align: left;
+  margin-left: 40px;*/
 }
 
 .contact-info i, a {
