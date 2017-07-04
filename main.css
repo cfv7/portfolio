@@ -3,19 +3,22 @@
 =========================== */	
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  background-image: url(./media/stardust.png);
   font-size: 20px;
   color: #fff;
   background-color:#222;
   text-align: center;
   line-height: 1.5;
 }
+
 html {
   display: block;
   width: 100%;
 }
 
 #title{
+  margin-top: 10px;  
   margin-bottom: 0;
   color: ghostwhite;
 }
@@ -50,11 +53,6 @@ section p{
 .project-image{
   width: 100%;
   margin-right: 100px;
-  /*visibility: hidden;*/
-}
-
-.project-info{
-  visibility: hidden;
 }
 
 #symph-info, #wiki-info, #hanzi-info{
@@ -62,11 +60,6 @@ section p{
   font-size: 15px;
   padding: 7px;
 }
-
-.project-title h1{
-  margin-bottom:0;
-}
-
 }
 
 /* not mobile */
@@ -87,6 +80,13 @@ h1{
 /* ==========================
 	BASICS
 =========================== */	
+
+u {
+  text-decoration: none;
+  border-top:1px solid #fff;
+  border-bottom:1px solid #fff;
+}
+
 a{
   text-decoration: none;
 }
@@ -95,19 +95,11 @@ h2{
   font-family: 'EB Garamond',serif;
   text-decoration: underline;
   font-size: xx-large;
-  /*text-decoration-style: thick;*/
 }
 
 h1, h2 {
   color: #99CCFF;
-  margin-top: 10px;
   margin-bottom: 20px;
-}
-
-u {
-  text-decoration: none;
-  border-top:1px solid #fff;
-  border-bottom:1px solid #fff;
 }
 
 i {
@@ -131,14 +123,6 @@ p {
   margin-bottom: 0;
 }
 
-img {
-  height: 50px;
-  width: 50px;
-  /*border-radius: 70%;*/
-  display:inline-block;
-  vertical-align: middle;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -149,54 +133,31 @@ img {
 
 section {
   padding-top: 4% 0;
-  background-color: #222;
 }
 
 /* ==========================
   ABOUT
 =========================== */	
 
-.header {
-  text-align: center;
-}
-
 .about-me-wrapper{
   background: #222;
   color: ghostwhite;
-  z-index: 4;
   height: 100%;
   width: 100%;
-  /*text-align: ce;*/
-  /*margin-left: 40px;*/
-}
-
-.about-me-wrapper h2 {
-  margin-left: 0;
 }
 
 .highlight{
   color: palegoldenrod;
   font-weight: bold;
 }
-/*.about-me-image{
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  float: left;
-}*/
 
 /* ==========================
   PROJECTS
 =========================== */	
-.project-wrapper{
-  height: 100%;
-  width: 100%;
-}
 
 .project-title-image {
   float: left;
   width: 100%;
-  /*background-color: yellow;*/
   z-index: 3;
   height: 100%;
 }
@@ -207,14 +168,6 @@ section {
   height:100px;
   width: 100px;
   /*border: 3px solid #222;*/
-}
-
-#hanzi .project-title-image{
-  float: right;
-}
-
-#symphesis .project-title-image{
-  float: right;
 }
 
 #symph-info, #wiki-info, #hanzi-info{
@@ -232,33 +185,25 @@ section {
 .project-title {
   font-size: 1.5em;
   color: #222;
+  margin-bottom: 0;
+}
+
+.project-title h1{
+  margin-top: 20px;
 }
 
 .project-info {
   float: right;
   width: 100%;
-  /*background-color: lightgreen;*/
   z-index: 3;
   height: 100%;
   margin: 0;
-}
-
-.project-info p{
-  visibility: hidden;
-  color: #99CCFF;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .project-info i{
   color: #222;
   padding-bottom: 5px;
 }
-
-.project-info:nth-child(odd) {
-  float: left;
-}
-
 
 /* ==========================
   RIBBON
@@ -296,13 +241,12 @@ section {
 =========================== */	
 
 .card {
-  /*background: #2850ad;*/
   background: ghostwhite;
   border-radius: 1%;
   display: inline-block;
   height: 390px;
-  margin: 1rem;
-  position: relative;
+  /*margin: 1rem;*/
+  /*position: relative;*/
   margin-top: 25;
   margin-bottom: 40px;
 }
@@ -314,13 +258,12 @@ section {
 }
 
 .card:nth-child(odd){
-  background: palegoldenrod;
+  background: #99CCFF;
 }
 
 /* ==========================
   FOOTER
 =========================== */	
-
 
 .contact-info {
   background: #222;
@@ -328,11 +271,6 @@ section {
   z-index: 4;
   height: 100%;
   width: 100%;
-}
-
-.contact-info p, h2{
-  /*text-align: left;
-  margin-left: 40px;*/
 }
 
 .contact-info i, a {

@@ -28,21 +28,18 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
-  <!--<script type='text/javascript' src="/cards.js"></script>-->
 
 </head>
 
 <body>
   <main role="main">
     <!--<div class="corner-ribbon top-left sticky red shadow">讲中文?</div>-->
-    <section class="header">
-      <div>
+    <section title="header">
         <h1 id="title">
           <u>Colin Van Sickle </u>
         </h1>
-      </div>
     </section>
-    <section>
+    <section title="about-me">
       <div class="about-me-wrapper">
       <!--<img class="about-me-image" src="./media/colin.png"-->
         <h2>about</h2>
@@ -53,16 +50,6 @@
           I also have a liberal arts education in East Asian Studies and Mandarin. </br>
         </p>
       </div>
-
-      <!--<div class="projects-wrapper">
-        <h3 class="projects-wrapper">projects</h3>
-        <p class="projects-wrapper">
-          I. Symphesis - digital drum circle web app </br>
-          II. Wikipython - wikipedia scraping, word cloud generating python tool </br>
-          III. Hanzi - chinese character learning app </br>
-          IV. Jellylist - list-making app </br>
-        </p>
-      </div>-->
     </section>    
   
     <!--<div class="line map"> 
@@ -73,27 +60,44 @@
         <li class="stop contact-stop"></li>
       </ol>
     </div>-->
-    <section>
+
+    <section title="projects">
       <div class="project-wrapper">
         <h2> projects </h2>
-        
+
         <div id="symphesis" class="card">
           <div class="project-title-image">
             <h1 class="project-title">Symphesis</h1>
-            <img id="symph-img"class="project-image" src="./media/symphesis.png" alt="Symphesis">  
-            <p id="symph-info"> A collaborative music-making web application.</p>
+            <img 
+              id="symph-img"
+              class="project-image" 
+              src="./media/symphesis.png" 
+              alt="Symphesis"
+            >  
+            <p id="symph-info"> 
+              A collaborative music-making web application.
+            </p>
             <p id="symph-stack"> 
               React ・ Redux ・ Socket.io ・ Web Audio 
             </p>            
-            <a href="https://github.com/orcasynth/symphesis"><i class="fa fa-github-alt fa-2x"></i></a>
-            <a href="https://symphesis.herokuapp.com/"><i class="fa fa-external-link fa-2x"></i></a>    
+            <a href="https://github.com/orcasynth/symphesis">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+            <a href="https://symphesis.herokuapp.com/">
+              <i class="fa fa-external-link fa-2x"></i>
+            </a>    
           </div>
         </div>
         
         <div id="wiki" class="card">
           <div class="project-title-image">
             <h1 class="project-title">Wikipython</h1>
-            <img id="wiki-img" class="project-image" src="./media/wikipython.png" alt="Wikipython">
+            <img 
+              id="wiki-img" 
+              class="project-image" 
+              src="./media/wikipython.png" 
+              alt="Wikipython"
+            >
             <p id="wiki-info"> 
               A python tool that scrapes wikipedia </br>
               and outputs a word cloud.
@@ -101,16 +105,24 @@
             <p id="wiki-stack"> 
               Python ・ Flask  
             </p>  
-            <a href="https://github.com/cfv7/wikipython"><i class="fa fa-github-alt fa-2x"></i></a>
-            <a href="symphesis.com"><i class="fa fa-external-link fa-2x"></i></a>            
+            <a href="https://github.com/cfv7/wikipython">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+            <!--<a href="symphesis.com">
+              <i class="fa fa-external-link fa-2x"></i>
+            </a>            -->
           </div>
         </div>
-     
    
         <div id="hanzi" class="card" >
-          <div id="hanzi" class="project-title-image">
+          <div class="project-title-image">
             <h1 class="project-title">Hànzì</h1>
-            <img class="project-image" src="./media/hanzi.png" alt="hanzi-logo">
+            <img
+              id="hanzi-img"
+              class="project-image" 
+              src="./media/hanzi.png" 
+              alt="hanzi-logo"
+            >
             <p id="hanzi-info"> 
               A simple spaced-repetition </br>
               flashcard game for learning Chinese characters.
@@ -119,7 +131,7 @@
               React ・ Redux ・ MongoDB
             </p>                           
             <a href="https://github.com/cfv7/mandarinx">
-              <i class="fa fa-github-alt fa-2x"></i>
+              <i class="fa fa-github fa-2x"></i>
             </a>
             <a href="http://mandarin-x.herokuapp.com/">
               <i class="fa fa-external-link fa-2x"></i>
@@ -127,24 +139,29 @@
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
     <section class="contact-info">
-    <h2> contact </h2>
+      <h2> contact </h2>
       <div class="contact">
-        <p> let's connect! <i class="fa fa-hand-o-down fa-1x"></i> </br>
-        <span class="highlight"> cfvansick[-at-]gmail.com</span></p></br>
+        <p> let's connect! 
+          <i class="fa fa-hand-o-down fa-1x"></i></br>
+          <span class="highlight"> 
+            cfvansick[-at-]gmail.com
+          </span>
+        </p>
+        </br>
         <a href="mailto:cfvansick@gmail.com" target="_blank">
-          <i class="fa fa-envelope-o fa-2x"></i>
+          <i class="fa fa-envelope-square fa-2x"></i>
         </a>
         <a href="http://www.github.com/cfv7" target="_blank">
-          <i class="fa fa-code fa-2x"></i>
+          <i class="fa fa-github-square fa-2x"></i>
         </a>
         <a href="http://www.linkedin.com/in/colinvansickle" target="_blank">
           <i class="fa fa-linkedin-square fa-2x"></i>
         </a>
-        <a href="./media/CFVResume.pdf" target="_blank">
-          <i class="fa fa-file-text-o fa-2x"></i>
+        <a href="./media/colin-vansickle-resume.pdf" target="_blank">
+          <i class="fa fa-file-pdf-o fa-2x"></i>
         </a>
       </div>
     </section>
