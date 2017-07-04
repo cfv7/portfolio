@@ -140,7 +140,6 @@ section {
 =========================== */	
 
 .about-me-wrapper{
-  background: #222;
   color: ghostwhite;
   height: 100%;
   width: 100%;
@@ -266,7 +265,6 @@ section {
 =========================== */	
 
 .contact-info {
-  background: #222;
   color: ghostwhite;
   z-index: 4;
   height: 100%;
