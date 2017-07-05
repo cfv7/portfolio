@@ -28,7 +28,7 @@ html {
 =========================== */	
 
 /* mobile */
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
 
 h1{
   font-size: 35px;
@@ -39,7 +39,7 @@ section p{
 }
 
 .card {
-  width: 80%;
+  width: 88%;
   margin-top: 10px;
 }
 
@@ -48,6 +48,8 @@ section p{
   padding-right:0; 
   padding-bottom: 15px;
   font-size: 20px;
+  text-align: justify;
+  margin: 0px 6%;
 }
 
 .project-image{
@@ -251,7 +253,6 @@ section {
 }
 
 .card:hover{
-  transform: translateY(-3px);
   box-shadow: 0px 2px 20px #99CCFF;
   /*box-shadow: 10px 10px 5px #2850ad;*/
 }
