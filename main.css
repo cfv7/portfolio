@@ -50,11 +50,11 @@ html {
 }
 
 #grad1 {
-  background: red; /* For browsers that do not support gradients */    
-  background: -webkit-linear-gradient(left top, #2850ad, #99CCFF); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #2850ad, #99CCFF); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #2850ad, #99CCFF); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #2850ad, #99CCFF); /* Standard syntax (must be last) */
+  background: #99CCFF; /* For browsers that do not support gradients */    
+  background: -webkit-linear-gradient(left top, #2850ad, #99CCFF); 
+  background: -o-linear-gradient(bottom right, #2850ad, #99CCFF); 
+  background: -moz-linear-gradient(bottom right, #2850ad, #99CCFF);
+  background: linear-gradient(to bottom right, #2850ad, #99CCFF); 
 }
 
 /* ==========================
