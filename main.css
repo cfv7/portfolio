@@ -198,6 +198,7 @@ p {
 }
 
 .copyright {
+  margin-top: 30px;
   font-size: 10px;
   color: grey;
 }
@@ -276,6 +277,20 @@ p {
   }
 }
 
+
+@media only screen and (min-width: 768px) and (max-width: 800px){
+  h1{
+    font-size: 60px;
+  }
+  .card {
+    width: 25%;
+    margin: 0 auto;
+  }
+  .project-info {
+    font-size: 12px;
+  }
+}
+
 /* not mobile */
 @media only screen and (min-width: 768px){
   h1{
@@ -299,3 +314,5 @@ p {
     margin: 0px 24%;
   }
 }
+
+
