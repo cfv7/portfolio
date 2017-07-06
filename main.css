@@ -4,7 +4,8 @@
 
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-image: url(./media/stardust.png);
+  /*background-image: url(./media/stardust.png);*/
+  /*background-image: url(./media/snowfox.png);*/
   font-size: 20px;
   color: #fff;
   background-color:#222;
@@ -17,10 +18,43 @@ html {
   width: 100%;
 }
 
+/* ==========================
+  HEADER
+=========================== */	
+
 #title{
   margin-top: 10px;  
   margin-bottom: 0;
   color: ghostwhite;
+}
+
+.header img{
+  margin-top: 2%;
+  height: 200px;
+  width: 200px;
+  border-radius: 90%;
+  border: 2px solid #222;
+}
+
+.header{
+  background-color: #99CCFF;
+  color: #222;
+  padding-bottom: 70px;
+  border-radius: 1%;
+}
+
+.header h1{
+ color: #222;
+ font-family: 'EB Garamond', serif;
+ /*text-decoration: underline;*/
+}
+
+#grad1 {
+  background: red; /* For browsers that do not support gradients */    
+  background: -webkit-linear-gradient(left top, #2850ad, #99CCFF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #2850ad, #99CCFF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #2850ad, #99CCFF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #2850ad, #99CCFF); /* Standard syntax (must be last) */
 }
 
 /* ==========================
@@ -29,6 +63,10 @@ html {
 
 /* mobile */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+
+.header img{
+  margin-top:20px;
+}
 
 h1{
   font-size: 35px;
@@ -62,6 +100,7 @@ section p{
   font-size: 15px;
   padding: 7px;
 }
+
 }
 
 /* not mobile */
@@ -70,7 +109,7 @@ h1{
   font-size: 60px;
 }
 .card {
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
 }
 .about-me-card{
@@ -94,7 +133,7 @@ h1{
 
 u {
   text-decoration: none;
-  border-top:1px solid #fff;
+  /*border-top:1px solid #fff;*/
   border-bottom:1px solid #fff;
 }
 
@@ -124,9 +163,9 @@ i {
 i:hover {
   text-align: center;
   position: center;
-  color: #2850ad;
   padding: 15px;
   border-radius: 50%;
+  opacity: .5;
 }
 
 p {
@@ -275,7 +314,7 @@ section {
 =========================== */	
 
 .contact-info {
-  color: ghostwhite;
+  color: #222;
   z-index: 4;
   height: 100%;
   width: 100%;
@@ -284,13 +323,12 @@ section {
 .contact-info i, a {
     margin-left: -1px;
     padding-left: -2px;
-    color: ghostwhite;
+    color: #222;
 }
 
 .contact i:hover {
   border-radius: 1%;
-  background: ghostwhite;
-  color: #2850ad;
+  opacity: .5;
   box-shadow: 0 1px 3px 0 tint(#000000,44%), 0 1px 1px  0 tint(#000000,68%);
 }
 
