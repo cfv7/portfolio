@@ -3,11 +3,9 @@
 =========================== */	
 
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  /*background-image: url(./media/stardust.png);*/
-  /*background-image: url(./media/snowfox.png);*/
+  font-family: "HelveticaNeue-Light", sans-serif;
   font-size: 20px;
-  color: #fff;
+  color: ghostwhite;
   background-color:#222;
   text-align: center;
   line-height: 1.5;
@@ -22,10 +20,11 @@ html {
   HEADER
 =========================== */	
 
-#title{
-  margin-top: 10px;  
-  margin-bottom: 0;
-  color: ghostwhite;
+.header{
+  background-color: #99CCFF;
+  color: #222;
+  padding-bottom: 70px;
+  border-radius: 1%;
 }
 
 .header img{
@@ -36,20 +35,13 @@ html {
   border: 2px solid #222;
 }
 
-.header{
-  background-color: #99CCFF;
-  color: #222;
-  padding-bottom: 70px;
-  border-radius: 1%;
-}
-
 .header h1{
  color: #222;
  font-family: 'EB Garamond', serif;
  /*text-decoration: underline;*/
 }
 
-#grad1 {
+#gradient {
   background: #99CCFF; /* For browsers that do not support gradients */    
   background: -webkit-linear-gradient(left top, #2850ad, #99CCFF); 
   background: -o-linear-gradient(bottom right, #2850ad, #99CCFF); 
@@ -58,84 +50,8 @@ html {
 }
 
 /* ==========================
-  MEDIA QUERIES
-=========================== */	
-
-/* mobile */
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-
-.header img{
-  margin-top:20px;
-}
-
-h1{
-  font-size: 35px;
-}
-
-section p{
-  font-size: 21px;
-}
-
-.card {
-  width: 88%;
-  margin-top: 10px;
-}
-
-.about-me-wrapper p{
-  padding-left: 0;
-  padding-right:0; 
-  padding-bottom: 15px;
-  font-size: 20px;
-  text-align: justify;
-  margin: 0px 6%;
-}
-
-.project-image{
-  width: 100%;
-  margin-right: 100px;
-}
-
-#symph-info, #wiki-info, #hanzi-info{
-  color: #222;
-  font-size: 15px;
-  padding: 7px;
-}
-
-}
-
-/* not mobile */
-@media only screen and (min-width: 768px){
-h1{
-  font-size: 60px;
-}
-.card {
-  width: 30%;
-  margin: 0 auto;
-}
-.about-me-card{
-  padding-top: 50px;
-  margin: 0 auto;
-}
-
-.about-me-wrapper p{
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 15px;
-  font-size: 25px;
-  text-align: justify;
-  margin: 0px 24%;
-}
-}
-
-/* ==========================
 	BASICS
 =========================== */	
-
-u {
-  text-decoration: none;
-  /*border-top:1px solid #fff;*/
-  border-bottom:1px solid #fff;
-}
 
 a{
   text-decoration: none;
@@ -178,14 +94,6 @@ p {
 }
 
 /* ==========================
-  SECTION
-=========================== */	
-
-section {
-  padding-top: 4% 0;
-}
-
-/* ==========================
   ABOUT
 =========================== */	
 
@@ -219,13 +127,13 @@ section {
   /*border: 3px solid #222;*/
 }
 
-#symph-info, #wiki-info, #hanzi-info{
+.project-info {
   color: #222;
-  font-size: medium;
-  padding: 10px;
+  font-size: 20px;
+  padding: 1px;
 }
 
-#symph-stack, #wiki-stack, #hanzi-stack{
+.stack-info {
   color: #2850ad;
   font-size: small;
   padding: 10px;
@@ -240,50 +148,6 @@ section {
 .project-title h1{
   margin-top: 20px;
 }
-
-.project-info {
-  float: right;
-  width: 100%;
-  z-index: 3;
-  height: 100%;
-  margin: 0;
-}
-
-.project-info i{
-  color: #222;
-  padding-bottom: 5px;
-}
-
-/* ==========================
-  RIBBON
-=========================== */	
-
-.corner-ribbon{
-  width: 200px;
-  background: #fccc0a;
-  color:#222;
-  text-align: center;
-  line-height: 50px;
-  letter-spacing: 1px;
-}
-
-.corner-ribbon.sticky{
-  position: fixed;
-}
-
-.corner-ribbon.shadow{
-  box-shadow: 0 0 3px rgba(0,0,0,.3);
-}
-
-/* Different positions */
-
-.corner-ribbon.top-left{
-  top: 25px;
-  left: -50px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
 
 /* ==========================
   CARD
@@ -313,14 +177,14 @@ section {
   FOOTER
 =========================== */	
 
-.contact-info {
+.contact {
   color: #222;
   z-index: 4;
   height: 100%;
   width: 100%;
 }
 
-.contact-info i, a {
+.contact i, a {
     margin-left: -1px;
     padding-left: -2px;
     color: #222;
@@ -336,4 +200,102 @@ section {
   font-size: 10px;
   color: grey;
   border-bottom: 1px solid snow;
+}
+
+/* ==========================
+  RIBBON
+=========================== */	
+
+.corner-ribbon{
+  width: 200px;
+  background: palegoldenrod;
+  color:#222;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+}
+
+.corner-ribbon.sticky{
+  position: fixed;
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+/* Different positions */
+
+.corner-ribbon.top-left{
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* ==========================
+  MEDIA QUERIES
+=========================== */	
+
+/* mobile */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .header img{
+    margin-top:20px;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+
+  section p{
+    font-size: 21px;
+  }
+
+  .card {
+    width: 88%;
+    margin-top: 10px;
+  }
+
+  .about-me-wrapper p{
+    padding-left: 0;
+    padding-right:0; 
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-align: justify;
+    margin: 0px 6%;
+  }
+
+  .project-image{
+    width: 100%;
+    margin-right: 100px;
+  }
+
+  #symph-info, #wiki-info, #hanzi-info{
+    color: #222;
+    font-size: 15px;
+    padding: 7px;
+  }
+}
+
+/* not mobile */
+@media only screen and (min-width: 768px){
+  h1{
+    font-size: 60px;
+  }
+  .card {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .about-me-card{
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+
+  .about-me-wrapper p{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15px;
+    font-size: 25px;
+    text-align: justify;
+    margin: 0px 24%;
+  }
 }

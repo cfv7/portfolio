@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- 
+    made by...
+    _____ ____  __  _____   __
+   / ___ / __ \/ / /  _/ | / /
+  / /   / / / / /  / //  |/ /
+ / /___/ /_/ / /_ / // /|  /
+/_____/\____/___/___/_/ |_/
+thanks for visiting my website :) 
+-->
 <head>
   <title>Colin | Portfolio </title>
   <meta name="description" content="Colin Van Sickle's portfolio.">
-  <meta name="keywords" content="HTML, CSS, JavaScript, React, Redux, frontend web developer, development, digital strategy, China, Chinese, Mandarin, Colin">
+  <meta name="keywords" content="HTML, CSS, JavaScript, React, Redux, frontend web developer, development, digital strategy, China, Chinese, Mandarin, Colin, Denison, Thinkful">
   <meta name="author" content="Colin">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,21 +36,24 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
-
 </head>
 
 <body>
   <main role="main">
     <!--<div class="corner-ribbon top-left sticky red shadow">讲中文?</div>-->
-    <section title="header" class="header" id="grad1">
+
+    <!-- HEADER PICTURE & TITLE -->    
+    <section title="header" class="header" id="gradient">
+      <div class="introduction">
         <img src="./media/colin.png" alt="colin's picture">
         <h1>
-        Colin Van Sickle
+          Colin Van Sickle
         </h1>
-        <p class="quick-facts"> 
-          fullstack web developer <br />
+        <p> 
+          fullstack web developer
         </p>
-    <section class="contact-info" >
+      </div>  
+      <!-- HEADER ICONS -->
       <div class="contact">
         </br>
         <a href="mailto:cfvansick@gmail.com" title="email" target="_blank">
@@ -59,11 +70,13 @@
         </a>
       </div>
     </section>
-    </div>
-    </section>
+
+    <!-- ABOUT ME -->
     <section title="about-me">
       <div class="about-me-wrapper">
-        <h2>background</h2>
+        <h2>
+          background
+        </h2>
         <p>
           I am a <span class="highlight"> fullstack web developer</span> currently living in Ithaca, NY.
           I love to learn new languages and understand foreign cultures.
@@ -72,117 +85,87 @@
         </p>
       </div>
     </section>  
-    
-  
-    <!--<div class="line map"> 
-      <ol>  
-        <li class="stop"></li>
-        <li class="stop about-me-stop"></li>
-        <li class="stop projects-stop"></li>
-        <li class="stop contact-stop"></li>
-      </ol>
-    </div>-->
 
+    <!-- PROJECTS -->
     <section title="projects">
-      <div class="project-wrapper">
-        <h2> projects </h2>
-
-        <div id="symphesis" class="card">
-          <div class="project-title-image">
-            <h1 class="project-title">Symphesis</h1>
-            <img 
-              id="symph-img"
-              class="project-image" 
-              src="./media/symphesis.png" 
-              alt="Symphesis"
-            >  
-            <p id="symph-info"> 
-              A collaborative music-making web application.
-            </p>
-            <p id="symph-stack"> 
-              React ・ Redux ・ Socket.io ・ Web Audio 
-            </p>            
-            <a href="https://github.com/orcasynth/symphesis">
-              <i class="fa fa-github fa-2x"></i>
-            </a>
-            <a href="https://symphesis.herokuapp.com/">
-              <i class="fa fa-external-link fa-2x"></i>
-            </a>    
-          </div>
+      <h2> projects </h2>
+      <div id="symphesis" class="card">
+        <div class="project-title-image">
+          <h1 class="project-title">Symphesis</h1>
+          <img 
+            id="symph-img"
+            class="project-image" 
+            src="./media/symphesis.png" 
+            alt="Symphesis"
+          >  
+          <p class="project-info"> 
+            A collaborative music-making web application.
+          </p>
+          <p class="stack-info"> 
+            React ・ Redux ・ Socket.io ・ Web Audio 
+          </p>            
+          <a href="https://github.com/orcasynth/symphesis">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+          <a href="https://symphesis.herokuapp.com/">
+            <i class="fa fa-external-link fa-2x"></i>
+          </a>    
         </div>
+      </div>
+      
+      <div id="wiki" class="card">
+        <div class="project-title-image">
+          <h1 class="project-title">Wikipython</h1>
+          <img 
+            id="wiki-img" 
+            class="project-image" 
+            src="./media/wikipython.png" 
+            alt="Wikipython"
+          >
+          <p class="project-info"> 
+            A python tool that scrapes wikipedia </br>
+            and outputs a word cloud.
+          </p>
+          <p   class="stack-info"> 
+            Python ・ Flask  
+          </p>  
+          <a href="https://github.com/cfv7/wikipython">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
         
-        <div id="wiki" class="card">
-          <div class="project-title-image">
-            <h1 class="project-title">Wikipython</h1>
-            <img 
-              id="wiki-img" 
-              class="project-image" 
-              src="./media/wikipython.png" 
-              alt="Wikipython"
-            >
-            <p id="wiki-info"> 
-              A python tool that scrapes wikipedia </br>
-              and outputs a word cloud.
-            </p>
-            <p id="wiki-stack"> 
-              Python ・ Flask  
-            </p>  
-            <a href="https://github.com/cfv7/wikipython">
-              <i class="fa fa-github fa-2x"></i>
-            </a>
-            <!--<a href="symphesis.com">
-              <i class="fa fa-external-link fa-2x"></i>
-            </a>            -->
-          </div>
-        </div>
-   
-        <div id="hanzi" class="card">
-          <div class="project-title-image">
-            <h1 class="project-title">Hànzì</h1>
-            <img
-              id="hanzi-img"
-              class="project-image" 
-              src="./media/hanzi.png" 
-              alt="hanzi-logo"
-            >
-            <p id="hanzi-info"> 
-              A simple spaced-repetition </br>
-              flashcard game for learning Chinese characters.
-            </p>
-            <p id="hanzi-stack"> 
-              React ・ Redux ・ MongoDB
-            </p>                           
-            <a href="https://github.com/cfv7/hanzi">
-              <i class="fa fa-github fa-2x"></i>
-            </a>
-            <a href="http://hanzi-app.herokuapp.com/">
-              <i class="fa fa-external-link fa-2x"></i>
-            </a>            
-          </div>
+      <div id="hanzi" class="card">
+        <div class="project-title-image">
+          <h1 class="project-title">Hànzì</h1>
+          <img
+            id="hanzi-img"
+            class="project-image" 
+            src="./media/hanzi.png" 
+            alt="hanzi-logo"
+          >
+          <p class="project-info"> 
+            A simple spaced-repetition </br>
+            flashcard game for learning Chinese characters.
+          </p>
+          <p class="stack-info"> 
+            React ・ Redux ・ MongoDB
+          </p>                           
+          <a href="https://github.com/cfv7/hanzi">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+          <a href="http://hanzi-app.herokuapp.com/">
+            <i class="fa fa-external-link fa-2x"></i>
+          </a>            
         </div>
       </div>
     </section>
   </main>
-  <footer class="copyright"> © 2017</footer>
+  <footer class="copyright"> © 2017 ~
+    <strong> Colin Van Sickle </strong> <br />
+    <!--cfvansick[-at-]gmail.com-->
+  </footer>
 </body>
-<script>
-    // <p> let's connect! 
-    //       <i class="fa fa-hand-o-down fa-1x"></i></br>
-    //         <strong> cfvansick[-at-]gmail.com </strong>
-    // </p>
-
-// $(document).ready(function(){
-//   $("#symphesis").click(function(){
-//     $("#symph-img").toggle();
-//     $("#symph-info").show();
-//     $("#symph-stack").show();
-//   });
-//   $("#wiki").click(function(){
-//     $("#wiki-img").toggle();
-//     $("#wiki-info").show();
-//   });
-// });
-</script>
 </html>
 
 
