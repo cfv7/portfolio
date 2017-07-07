@@ -11,7 +11,7 @@ thanks for visiting my website :)
 -->
 <head>
   <title>Colin Van Sickle's Portfolio </title>
-  <meta name="description" content="Colin Van Sickle's portfolio.">
+  <meta name="description" content="">
   <meta name="keywords" content="HTML, CSS, JavaScript, React, Redux, frontend web developer, development, digital strategy, China, Chinese, Mandarin, Colin, Denison, Thinkful">
   <meta name="author" content="Colin">
   <meta charset="utf-8">
@@ -49,12 +49,31 @@ thanks for visiting my website :)
         <h1>
           Colin Van Sickle
         </h1>
-        <p> 
-          fullstack web developer
+        <p class="header-blurb"> 
+           I am a <strong> fullstack web developer</strong> living in Ithaca, NY.
         </p>
       </div>  
-      <!-- HEADER ICONS -->
+    </section>
+
+    <!-- ABOUT ME -->
+    <section title="about-me">
+      <div class="about-me-wrapper">
+        <h2>
+          Background
+        </h2>
+        <p>
+          I am a graduate of Thinkful's four month, full-time fullstack web development course. As a result, I have extensive experience creating web apps using JavaScript, React, Redux, Node, MongoDB, and PostgresQL.
+          <br /> 
+          <br /> 
+          I have two years of tech experience working with a small web team. During that time I learned the fundamentals of HTML, CSS, Wordpress, and general digital strategy.
+          <br />
+          <br /> 
+          I also have a Bachelors degree in East Asian Studies from Denison University with focus in  Mandarin language and Chinese philosophy.
+        </p>
+      </div>
+      <!-- ABOUT-ME ICONS -->
       <div class="contact">
+        <h2>Contact</h2>
         </br>
         <a href="mailto:cfvansick@gmail.com" title="email" target="_blank">
           <i class="fa fa-envelope-square fa-2x"></i>
@@ -69,26 +88,36 @@ thanks for visiting my website :)
           <i class="fa fa-file-pdf-o fa-2x"></i>
         </a>
       </div>
-    </section>
-
-    <!-- ABOUT ME -->
-    <section title="about-me">
-      <div class="about-me-wrapper">
-        <h2>
-          background
-        </h2>
-        <p>
-          I am a <span class="highlight"> fullstack web developer</span> currently living in Ithaca, NY.
-          I love to learn new languages and understand foreign cultures.
-          I have two years of tech experience working with a small web team.
-          I also have a Bachelors degree in East Asian Studies from Denison University with focus on both Mandarin language and Chinese philosophy.
-        </p>
-      </div>
     </section>  
 
     <!-- PROJECTS -->
     <section title="projects">
-      <h2> projects </h2>
+      <h2> Projects </h2>
+      
+      <div id="hanzi" class="card">
+        <div class="project-title-image">
+          <h1 class="project-title">Hànzì</h1>
+          <img
+            id="hanzi-img"
+            class="project-image" 
+            src="./media/hanzi.png" 
+            alt="hanzi-logo"
+          >
+          <p class="project-info"> 
+            A flashcard game for learning Chinese characters.
+          </p>
+          <p class="stack-info"> 
+            React ・ Redux ・ MongoDB
+          </p>                           
+          <a href="https://github.com/cfv7/hanzi" title="github repo">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+          <a href="http://hanzi-app.herokuapp.com/" title="live site">
+            <i class="fa fa-external-link fa-2x"></i>
+          </a>            
+        </div>
+      </div>
+      
       <div id="symphesis" class="card">
         <div class="project-title-image">
           <h1 class="project-title">Symphesis</h1>
@@ -104,10 +133,10 @@ thanks for visiting my website :)
           <p class="stack-info"> 
             React ・ Redux ・ Socket.io ・ Web Audio 
           </p>            
-          <a href="https://github.com/orcasynth/symphesis">
+          <a href="https://github.com/orcasynth/symphesis" title="github repo">
             <i class="fa fa-github fa-2x"></i>
           </a>
-          <a href="https://symphesis.herokuapp.com/">
+          <a href="https://symphesis.herokuapp.com/" title="live site">
             <i class="fa fa-external-link fa-2x"></i>
           </a>    
         </div>
@@ -119,46 +148,42 @@ thanks for visiting my website :)
           <img 
             id="wiki-img" 
             class="project-image" 
-            src="./media/wikipython.png" 
+            src="./media/wiki_ozil.gif" 
             alt="Wikipython"
           >
           <p class="project-info"> 
-            A python tool that scrapes wikipedia </br>
-            and outputs a word cloud.
+            A python tool that makes wikipedia word clouds.
           </p>
           <p   class="stack-info"> 
             Python ・ Flask  
           </p>  
-          <a href="https://github.com/cfv7/wikipython">
+          <a href="https://github.com/cfv7/wikipython" title="github repo">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="jelly" class="card">
+        <div class="project-title-image">
+          <h1 class="project-title">Jellylist</h1>
+          <img 
+            id="jelly-img" 
+            class="project-image" 
+            src="./media/jellylist.png" 
+            alt="Jellylist"
+          >
+          <p class="project-info"> 
+            A gift list web application.
+          </p>
+          <p   class="stack-info"> 
+            React ・ Redux ・ MongoDB 
+          </p>  
+          <a href="https://github.com/cfv7/jellylist d" title="github repo">
             <i class="fa fa-github fa-2x"></i>
           </a>
         </div>
       </div>
         
-      <div id="hanzi" class="card">
-        <div class="project-title-image">
-          <h1 class="project-title">Hànzì</h1>
-          <img
-            id="hanzi-img"
-            class="project-image" 
-            src="./media/hanzi.png" 
-            alt="hanzi-logo"
-          >
-          <p class="project-info"> 
-            A simple spaced-repetition </br>
-            flashcard game for learning Chinese characters.
-          </p>
-          <p class="stack-info"> 
-            React ・ Redux ・ MongoDB
-          </p>                           
-          <a href="https://github.com/cfv7/hanzi">
-            <i class="fa fa-github fa-2x"></i>
-          </a>
-          <a href="http://hanzi-app.herokuapp.com/">
-            <i class="fa fa-external-link fa-2x"></i>
-          </a>            
-        </div>
-      </div>
     </section>
   </main>
   <footer class="copyright"> © 2017 ~

@@ -23,12 +23,11 @@ html {
 .header{
   background-color: #99CCFF;
   color: #222;
-  padding-bottom: 70px;
   border-radius: 1%;
 }
 
 .header img{
-  margin-top: 2%;
+  margin-top: 20px;
   height: 200px;
   width: 200px;
   border-radius: 90%;
@@ -38,15 +37,25 @@ html {
 .header h1{
  color: #222;
  font-family: 'EB Garamond', serif;
- /*text-decoration: underline;*/
+ margin-bottom:0;
+}
+
+.header-blurb{
+  padding-bottom: 20px;
 }
 
 #gradient {
-  background: #99CCFF; /* For browsers that do not support gradients */    
+  background: #99CCFF; /* For browsers that do not support gradients     */
   background: -webkit-linear-gradient(left top, #2850ad, #99CCFF); 
   background: -o-linear-gradient(bottom right, #2850ad, #99CCFF); 
   background: -moz-linear-gradient(bottom right, #2850ad, #99CCFF);
   background: linear-gradient(to bottom right, #2850ad, #99CCFF); 
+  /*background-image: url("./media/web.png");
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);*/
 }
 
 /* ==========================
@@ -57,15 +66,18 @@ a{
   text-decoration: none;
 }
 
+h1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 h2{
   font-family: 'EB Garamond',serif;
-  text-decoration: underline;
   font-size: xx-large;
 }
 
 h1, h2 {
   color: #99CCFF;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 i {
@@ -103,11 +115,6 @@ p {
   width: 100%;
 }
 
-.highlight{
-  color: palegoldenrod;
-  font-weight: bold;
-}
-
 /* ==========================
   PROJECTS
 =========================== */	
@@ -120,17 +127,17 @@ p {
 }
 
 .project-title-image img{
-  margin: 10px;
-  border-radius:  90%;
-  height:100px;
-  width: 100px;
-  /*border: 3px solid #222;*/
+  /*margin: 10px;*/
+  border-radius:  1%;
+  /*height:29%;*/
+  width: 80%;
+  border: 1px solid #222;
 }
 
 .project-info {
   color: #222;
   font-size: 20px;
-  padding: 1px;
+  padding: 10px;
 }
 
 .stack-info {
@@ -142,11 +149,11 @@ p {
 .project-title {
   font-size: 1.5em;
   color: #222;
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 
 .project-title h1{
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 /* ==========================
@@ -157,7 +164,7 @@ p {
   background: ghostwhite;
   border-radius: 1%;
   display: inline-block;
-  height: 390px;
+  height: 550px;
   /*margin: 1rem;*/
   /*position: relative;*/
   margin-top: 25;
@@ -178,17 +185,19 @@ p {
 =========================== */	
 
 .contact {
-  margin-top: 30px;
   color: #222;
   z-index: 4;
   height: 100%;
   width: 100%;
 }
 
+.contact h2 {
+  margin-bottom: 0;
+}
 .contact i, a {
     margin-left: -1px;
     padding-left: -2px;
-    color: #222;
+    color: #99CCFF;
 }
 
 .contact i:hover {
@@ -239,8 +248,13 @@ p {
 
 /* mobile */
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  
   .header img{
     margin-top:20px;
+  }
+  
+  .header-blurb{
+    font-size: 15px;
   }
 
   h1{
@@ -253,21 +267,19 @@ p {
 
   .card {
     width: 88%;
-    margin-top: 10px;
+    height: inherit;
   }
 
   .about-me-wrapper p{
     padding-left: 0;
     padding-right:0; 
-    padding-bottom: 15px;
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     margin: 0px 6%;
   }
 
   .project-image{
-    width: 100%;
-    margin-right: 100px;
+    width: 90%;
   }
 
   #symph-info, #wiki-info, #hanzi-info{
@@ -275,10 +287,14 @@ p {
     font-size: 15px;
     padding: 7px;
   }
+
+  .project-title h1{
+    margin-top: 20px;
+}
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 800px){
+@media only screen and (min-width: 768px) and (max-width: 974px){
   h1{
     font-size: 60px;
   }
@@ -292,13 +308,14 @@ p {
 }
 
 /* not mobile */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) and (max-width: 975px){
   h1{
     font-size: 60px;
   }
   .card {
-    width: 30%;
+    width: 35%;
     margin: 0 auto;
+    height: 420px;
   }
   .about-me-card{
     padding-top: 50px;
@@ -308,10 +325,29 @@ p {
   .about-me-wrapper p{
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 15px;
     font-size: 25px;
-    text-align: justify;
-    margin: 0px 24%;
+    text-align: center;
+    margin: 0px 15%;
+  }
+}
+
+@media only screen and (min-width: 976px){
+  .card {
+    width: 47%;
+    margin: 0 auto;
+    height: 540px;
+  }
+  h1{
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .about-me-wrapper p {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px 25%;
   }
 }
 
