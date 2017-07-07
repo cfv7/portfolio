@@ -3,7 +3,7 @@
 =========================== */	
 
 body {
-  font-family: "HelveticaNeue-Light", sans-serif;
+  font-family: "Quattrocento Sans", sans-serif;
   font-size: 20px;
   color: ghostwhite;
   background-color:#222;
@@ -21,22 +21,24 @@ html {
 =========================== */	
 
 .header{
-  background-color: #99CCFF;
+  /*background-color: #99CCFF;*/
   color: #222;
   border-radius: 1%;
 }
 
 .header img{
   margin-top: 20px;
-  height: 200px;
-  width: 200px;
   border-radius: 90%;
   border: 2px solid #222;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 }
 
 .header h1{
  color: #222;
- font-family: 'EB Garamond', serif;
+ font-family: "Ovo", serif;
  margin-bottom:0;
 }
 
@@ -44,14 +46,23 @@ html {
   padding-bottom: 20px;
 }
 
+.introduction{
+  background: ghostwhite;
+  opacity:.7;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
 #gradient {
-  background: #99CCFF; /* For browsers that do not support gradients     */
-  background: -webkit-linear-gradient(left top, #2850ad, #99CCFF); 
+  /* background: #99CCFF; For browsers that do not support gradients     */
+  /*background: -webkit-linear-gradient(left top, #2850ad, #99CCFF); 
   background: -o-linear-gradient(bottom right, #2850ad, #99CCFF); 
   background: -moz-linear-gradient(bottom right, #2850ad, #99CCFF);
-  background: linear-gradient(to bottom right, #2850ad, #99CCFF); 
-  /*background-image: url("./media/web.png");
-  -webkit-filter: blur(5px);
+  background: linear-gradient(to bottom right, #2850ad, #99CCFF); */
+  background-image: url("./media/web.png");
+  /*-webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
@@ -279,6 +290,7 @@ p {
 
   .project-image{
     width: 90%;
+    height: 50%;
   }
 
   #symph-info, #wiki-info, #hanzi-info{
