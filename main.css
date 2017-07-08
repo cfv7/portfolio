@@ -30,10 +30,6 @@ html {
   margin-top: 20px;
   border-radius: 90%;
   border: 2px solid #222;
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
 }
 
 .header h1{
@@ -53,6 +49,22 @@ html {
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.7;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:.6;
+    }
 }
 
 #gradient {
@@ -82,13 +94,13 @@ h1{
   margin-bottom: 20px;
 }
 h2{
-  font-family: 'EB Garamond',serif;
+  font-family: 'Ovo',serif;
   font-size: xx-large;
 }
 
 h1, h2 {
   color: #99CCFF;
-  /*margin-bottom: 20px;*/
+  margin-bottom: 40px;
 }
 
 i {
@@ -124,6 +136,10 @@ p {
   color: ghostwhite;
   height: 100%;
   width: 100%;
+  animation: fadein 4s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 }
 
 /* ==========================
