@@ -56,7 +56,7 @@ html {
         opacity:0;
     }
     to {
-        opacity:1;
+        opacity:.7;
     }
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
@@ -64,7 +64,7 @@ html {
         opacity:0;
     }
     to {
-        opacity:.6;
+        opacity:.7;
     }
 }
 
@@ -369,7 +369,7 @@ p {
   .card {
     width: 40%;
     margin: 0 auto;
-    height: 700px;
+    height: 635px;
   }
   .about-me-wrapper p {
     padding-left: 0;
