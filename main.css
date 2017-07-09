@@ -56,7 +56,7 @@ html {
         opacity:0;
     }
     to {
-        opacity:.7;
+        opacity:1;
     }
 }
 @-webkit-keyframes fadein { /* Safari and Chrome */
