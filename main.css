@@ -178,7 +178,6 @@ p {
   background: ghostwhite;
   border-radius: 1%;
   display: inline-block;
-  height: 550px;
   /*margin: 1rem;*/
   /*position: relative;*/
   margin-top: 25;
@@ -304,7 +303,11 @@ p {
 
   .project-title h1{
     margin-top: 20px;
-}
+  }
+
+  .stack-info {
+    font-size: x-small;
+  }
 }
 
 
@@ -329,7 +332,7 @@ p {
   .card {
     width: 33%;
     margin: 0 auto;
-    height: 420px;
+    /*height: 420px;*/
   }
   .about-me-card{
     padding-top: 50px;
@@ -343,13 +346,17 @@ p {
     text-align: center;
     margin: 0px 15%;
   }
+  
+  .stack-info {
+    font-size: x-small;
+  }  
 }
 
 @media only screen and (min-width: 976px) and (max-width: 1380px){
   .card {
     width: 40%;
     margin: 0 auto;
-    height: 540px;
+    /*height: 540px;*/
   }
   h1{
     font-size: 60px;
@@ -369,7 +376,7 @@ p {
   .card {
     width: 40%;
     margin: 0 auto;
-    height: 635px;
+    /*height: 635px;*/
   }
   .about-me-wrapper p {
     padding-left: 0;
