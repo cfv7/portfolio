@@ -151,7 +151,7 @@ p {
 .project-info {
   color: #222;
   font-size: 20px;
-  padding: 10px;
+  padding: 35px;
 }
 
 .stack-info {
@@ -180,7 +180,8 @@ p {
   display: inline-block;
   /*margin: 1rem;*/
   /*position: relative;*/
-  margin-top: 25;
+  margin-top: 20px;
+  vertical-align: top;
   margin-bottom: 40px;
 }
 
@@ -282,6 +283,10 @@ p {
     height: inherit;
   }
 
+  .project-info {
+    padding: 15px;
+  }
+
   .about-me-wrapper p{
     padding-left: 0;
     padding-right:0; 
@@ -318,6 +323,7 @@ p {
   .card {
     width: 25%;
     margin: 0 auto;
+    margin-top: 20px;
   }
   .project-info {
     font-size: 12px;
@@ -332,6 +338,7 @@ p {
   .card {
     width: 33%;
     margin: 0 auto;
+    margin-top: 20px;
     /*height: 420px;*/
   }
   .about-me-card{
@@ -356,6 +363,7 @@ p {
   .card {
     width: 40%;
     margin: 0 auto;
+    margin-top: 20px;
     /*height: 540px;*/
   }
   h1{
@@ -376,6 +384,7 @@ p {
   .card {
     width: 40%;
     margin: 0 auto;
+    margin-top: 20px;
     /*height: 635px;*/
   }
   .about-me-wrapper p {
