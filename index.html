@@ -40,6 +40,9 @@ thanks for visiting my website :)
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
   </script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
 
 <body>
@@ -67,6 +70,43 @@ thanks for visiting my website :)
           How you engage an audience is dependent on the audience itself which can vary greatly by both geography and culture.  My deep exposure to East Asian markets and language informs my approach to web development, ensuring that your product will appeal to and effectively engage the right target audience.  If you would like to discuss targeting a global audience feel free to reach out. In my free time I like to play chess and support Arsenal Football Club.
         </p>
       </div>
+      <div class="skills-wrapper">
+        <h2>Skills</h2>
+        <div class="skill-box">
+          <div id="accordion" >  
+            <h3 id="front-end" class="skill-tab"> ♖ Front End </h3>
+            <div id="front-end" class="skill-tab">
+              <p>JavaScript ES6</p>
+              <p>React + Redux</p>
+              <p>HTML5 + CSS3</p>
+              <p>jQuery</p>
+            </div>
+            <h3 id="back-end" class="skill-tab">♗ Back End</h3>
+            <div id="back-end" class="skill-tab">
+              <p> Python + Flask</p>
+              <p> Node + Express</p>
+              <p> MongoDB + Mongoose</p>
+              <p> PostgreSQL + Knex.js</p>
+            </div>
+            <h3 id="workflow" class="skill-tab">♘ Workflow</h3>
+            <div id="workflow" class="skill-tab">
+              <p> Github</p>
+              <p> Yarn + npm</p>
+              <p> Heroku + Digital Ocean</p>
+              <p> Travis CI</p>
+            </div>
+            <h3 id="other" class="skill-tab"> ♕ Other </h3>
+            <div id="other" class="skill-tab">
+              <p> Mandarin Chinese</p>
+              <p> Agile Development</p>
+              <p> Google Analytics</p>
+              <p> Wordpress + Drupal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <!-- ABOUT-ME ICONS -->
       <div class="contact">
         <h2>Contact</h2>
@@ -217,4 +257,14 @@ thanks for visiting my website :)
 </body>
 </html>
 
-
+<script>
+  $(function() {
+    $("#accordion").accordion({
+      icons: null,
+      heightStyle: "content",
+      collapsible: true
+    });
+  });
+  $(".ui-accordion-content").css("background-color", "purple");
+  $(".ui-widget-content").css("background", "tan");
+</script>
