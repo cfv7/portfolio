@@ -80,6 +80,7 @@ h1{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 h2{
   font-family: 'Ovo',serif;
   font-size: xx-large;
@@ -135,6 +136,7 @@ p {
   .skills-wrapper {
     /*border: 1px solid pink;*/
   }
+
   .skills-wrapper h2{
     /*margin-bottom: 0;*/
     margin-top: 35px;
@@ -150,10 +152,8 @@ p {
   .skill-tab {
     margin: 0;
     font-size: 30px;
-    /*height: 100px;*/
     padding: 20px;
     color: #222;
-    /*border-bottom: .5px solid #222;*/
   }
 
   #accordion .ui-accordion-content { 
@@ -162,20 +162,36 @@ p {
   }
 
   #front-end{
-    background-color: lightblue;
+    background-color: #7dc0d1;
   }
 
   #back-end {
-    background-color: lightgoldenrodyellow;
+    background-color: #F7F7B6;
   }
 
   #workflow{
-    background-color: pink;
+    background-color: #eac39a;
   }
 
   #other {
-    background-color: violet;
+    background-color: #D7E6EA;
   }
+
+  #front-end-body {
+    background-color: #B4DBE4;
+  }
+
+  #back-end-body {
+    background-color: lightgoldenrodyellow;
+  }
+
+  #workflow-body {
+    background-color: #F1D7BB;
+  }
+
+  #other-body {
+    background-color: #eaf2f4;
+  }  
 
 /* ==========================
   PROJECTS
