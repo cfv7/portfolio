@@ -325,6 +325,10 @@ p {
     font-size: 30px;
   }
 
+  .skill-tab {
+    font-size: 25px;
+  }
+
   section p{
     font-size: 21px;
   }
@@ -373,6 +377,10 @@ p {
   
   h2{
     font-size: 30px;
+  }
+
+  .skill-tab {
+    font-size: 25px;
   }
 
   .card {
