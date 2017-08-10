@@ -186,8 +186,28 @@ p {
 }  
 
 /* ==========================
-  PROJECTS
+  WEBMASTER & PROJECTS
 =========================== */	
+#floyd{
+  width: 88%;
+}
+
+#floyd-img {
+  width: 50%;
+  float: left;
+}
+
+#floyd-info {
+  margin: 0px 10px 10px 10px;
+}
+
+#floyd-img-div {
+  margin: 0px 17px 10px 10px;
+}
+
+#floyd-link {
+ color: #2850ad;
+}
 
 .project-title-image {
   float: left;
@@ -391,6 +411,10 @@ p {
 
   .project-info {
     font-size: 12px;
+  }
+
+  #floyd-img {
+    float: none;
   }
 }
 
